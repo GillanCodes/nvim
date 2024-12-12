@@ -20,8 +20,12 @@ return {
         git_ignored = false
       }
     }
+  },
+  {
+    "pmizio/typescript-tools.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
+    opts = {},
   }
-
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
