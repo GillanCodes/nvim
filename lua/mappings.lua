@@ -7,6 +7,11 @@ map("i", "jk", "<ESC>")
 
 map("n", "f", "<cmd>Telescope find_files<cr>")
 
+map("n" , "=", "<cmd>vertical resize +5<cr>")
+map("n" , ")", "<cmd>vertical resize -5<cr>")
+map("n" , "$", "<cmd>horizontal resize +5<cr>")
+map("n" , "^", "<cmd>horizontal resize -5<cr>")
+
 map("n", "<C-t>", function()
   require("nvchad.themes").open()
 end, {})
