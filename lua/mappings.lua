@@ -16,6 +16,10 @@ map("n", "<C-t>", function()
   require("nvchad.themes").open()
 end, {})
 
+map({ "n", "t" }, "<C-i>", function()
+  require("nvchad.term").toggle { pos = "float", id = "floatTerm" }
+end, { desc = "terminal toggle floating term" })
+
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
 --
 --
