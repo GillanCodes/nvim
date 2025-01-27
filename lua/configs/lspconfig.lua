@@ -4,7 +4,7 @@ require("nvchad.configs.lspconfig").defaults()
 local lspconfig = require "lspconfig"
 
 -- EXAMPLE
-local servers = { "html", "cssls", "clangd", "ts_ls", "phpactor" }
+local servers = { "html", "cssls", "clangd", "ts_ls", "phpactor", "tailwindcss", "intelephense"}
 local nvlsp = require "nvchad.configs.lspconfig"
 
 -- lsps with default config
