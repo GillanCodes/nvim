@@ -17,15 +17,15 @@ return {
     "nvim-tree/nvim-tree.lua",
     opts = {
       filters = {
-        git_ignored = false
-      }
-    }
+        git_ignored = false,
+      },
+    },
   },
   {
     "pmizio/typescript-tools.nvim",
     dependencies = { "nvim-lua/plenary.nvim", "neovim/nvim-lspconfig" },
     opts = {},
-  }
+  },
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
   -- 	opts = {
