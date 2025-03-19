@@ -6,6 +6,7 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 
 map("n", "f", "<cmd>Telescope find_files<cr>")
+map("n", "fg", "<cmd>Telescope live_grep<cr>")
 
 map("n" , "=", "<cmd>vertical resize +5<cr>")
 map("n" , ")", "<cmd>vertical resize -5<cr>")
