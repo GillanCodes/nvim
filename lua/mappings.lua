@@ -10,8 +10,8 @@ map("n", "fg", "<cmd>Telescope live_grep<cr>")
 
 map("n" , "=", "<cmd>vertical resize +5<cr>")
 map("n" , ")", "<cmd>vertical resize -5<cr>")
-map("n" , "$", "<cmd>horizontal resize +5<cr>")
-map("n" , "^", "<cmd>horizontal resize -5<cr>")
+-- map("n" , "$", "<cmd>horizontal resize +5<cr>")
+-- map("n" , "^", "<cmd>horizontal resize -5<cr>")
 
 map("n", "<C-t>", function()
   require("nvchad.themes").open()
