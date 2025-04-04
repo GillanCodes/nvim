@@ -12,10 +12,10 @@ map("i", "jk", "<ESC>")
 map("n", "f", "<cmd>Telescope find_files<cr>")
 map("n", "<leader>f", "<cmd>Telescope live_grep<cr>")
 
-map("n", "=", "<cmd>vertical resize +5<cr>")
-map("n", ")", "<cmd>vertical resize -5<cr>")
-map("n", "$", "<cmd>horizontal resize +5<cr>")
-map("n", "^", "<cmd>horizontal resize -5<cr>")
+-- map("n", "=", "<cmd>vertical resize +5<cr>")
+-- map("n", ")", "<cmd>vertical resize -5<cr>")
+-- map("n", "$", "<cmd>horizontal resize +5<cr>")
+-- map("n", "^", "<cmd>horizontal resize -5<cr>")
 
 -- Save
 map("n", "<leader>w", "<CMD>update<CR>")
