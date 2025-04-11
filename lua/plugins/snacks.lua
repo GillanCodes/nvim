@@ -20,7 +20,7 @@ return {
           explorer = {
             hidden = true,
             ignored = true,
-            auto_close=true
+            auto_close = false
           }
         }
       },
