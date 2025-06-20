@@ -17,6 +17,9 @@ map("n", "<leader>f", "<cmd>Telescope live_grep<cr>")
 -- map("n", "$", "<cmd>horizontal resize +5<cr>")
 -- map("n", "^", "<cmd>horizontal resize -5<cr>")
 
+-- Buffers
+map("n", "<leader>bd", "<CMD>bd<CR>")
+
 -- Save
 map("n", "<leader>w", "<CMD>update<CR>")
 
