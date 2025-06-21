@@ -19,6 +19,17 @@ map("n", "<leader>f", "<cmd>Telescope live_grep<cr>")
 
 -- Buffers
 map("n", "<leader>bd", "<CMD>bd<CR>")
+map("n", "<leader>bn", "<CMD>enew<CR>")
+map("n", "<leader>bq", "<CMD>write|bdelete<CR>")
+map("n", "<leader><Tab>", "<CMD>bnext<CR>")
+map("n", "<leader><S-Tab>", "<CMD>bnext<CR>")
+
+-- Split
+map("n", "<leader>sv", "<CMD>vnew<CR>")
+map("n", "<leader>sh", "<CMD>new<CR>")
+
+-- Explorer
+map("n", "<leader>e", "<CMD>Explore<CR>")
 
 -- Save
 map("n", "<leader>w", "<CMD>update<CR>")
