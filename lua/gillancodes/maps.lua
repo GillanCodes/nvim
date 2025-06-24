@@ -28,8 +28,8 @@ map("n", "<S-Tab>", "<CMD>bnext<CR>")
 map("n", "<leader>sv", "<CMD>vnew<CR>")
 map("n", "<leader>sh", "<CMD>new<CR>")
 
--- Explorer
-map("n", "<leader>e", "<CMD>Explore<CR>")
+-- Explorer (MOved to Yazi)
+-- map("n", "<leader>e", "<CMD>Explore<CR>")
 
 -- Save
 map("n", "<leader>w", "<CMD>update<CR>")
