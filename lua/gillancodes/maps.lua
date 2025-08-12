@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-global, redundant-parameter
 -- ~/nvim/lua/gillancodes/maps.lua
 
 vim.g.mapleader = " "
@@ -69,3 +70,8 @@ vim.keymap.set('n', '<leader>se', vim.diagnostic.open_float, {noremap=true, sile
 
 -- Nonels
 map("n", "<leader>fm", vim.lsp.buf.format, {})
+
+-- FTerm
+vim.keymap.set('n', '<C-return>', '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set('n', '<C-backspace>', '<CMD>lua require("FTerm").exit()<CR>')
+vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
