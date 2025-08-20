@@ -39,4 +39,4 @@ vim.diagnostic.config({
   severity_sort = false,
 })
 
-vim.cmd("colorscheme nightfox")
+vim.cmd("colorscheme gruvbox")
