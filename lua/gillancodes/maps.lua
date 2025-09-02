@@ -84,3 +84,10 @@ map("n", "<leader>fm", vim.lsp.buf.format, {})
 vim.keymap.set('n', '<C-return>', '<CMD>lua require("FTerm").toggle()<CR>')
 vim.keymap.set('n', '<C-backspace>', '<CMD>lua require("FTerm").exit()<CR>')
 vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
+
+-- Better J behavior
+vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines and keep cursor position" })
+
+-- Better indenting in visual mode
+vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
+vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
