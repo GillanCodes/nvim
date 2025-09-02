@@ -71,17 +71,21 @@ return {
     ---@module 'blink.cmp'
     ---@type blink.cmp.Config
     opts = {
-            keymap = {
+      keymap = {
         preset = 'enter',
 
         ['<S-Tab>'] = { 'select_prev', 'fallback' },
         ['<Tab>'] = { 'select_next', 'fallback' },
+        ['<C-Leader>'] = {'show', 'hide'}
       },
       appearance = {
         nerd_font_variant = "mono",
       },
 
-      completion = { documentation = { auto_show = false } },
+      completion = { 
+        documentation = { auto_show = false },
+        menu = { auto_show = false }
+      },
 
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
@@ -91,3 +95,4 @@ return {
     opts_extend = { "sources.default" },
   },
 }
+
