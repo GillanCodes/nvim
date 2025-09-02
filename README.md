@@ -58,6 +58,4 @@ Clone this config and symlink it:
 
 ```bash
 git clone https://github.com/gillancodes/nvim ~/.config/nvim
-
----
 ```
