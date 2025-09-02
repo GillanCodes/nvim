@@ -41,13 +41,10 @@ map("n", "<leader>q", "<CMD>q<CR>")
 -- Exit insert mode
 map("i", "jk", "<ESC>")
 
--- NeoTree
--- map("n", "<leader>e", "<CMD>Neotree focus<CR>")
--- map("n", "<C-n>", "<CMD>Neotree toggle<CR>")
 
 -- New Windows
-map("n", "<leader>o", "<CMD>vsplit<CR>")
-map("n", "<leader>p", "<CMD>split<CR>")
+map("n", "<leader>j", "<CMD>vsplit<CR>")
+map("n", "<leader>k", "<CMD>split<CR>")
 
 -- Window Navigation
 map("n", "<C-h>", "<C-w>h")
@@ -55,13 +52,25 @@ map("n", "<C-l>", "<C-w>l")
 map("n", "<C-k>", "<C-w>k")
 map("n", "<C-j>", "<C-w>j")
 
+-- Resize
+map("n", "<C-Up>", ":resize +2<CR>", { desc = "Increase window height" })
+map("n", "<C-Down>", ":resize -2<CR>", { desc = "Decrease window height" })
+map("n", "<C-Left>", ":vertical resize -2<CR>", { desc = "Decrease window width" })
+map("n", "<C-Right>", ":vertical resize +2<CR>", { desc = "Increase window width" })
+
 -- Move cursor while in insert mode
-map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
-map("i", "<C-e>", "<End>", { desc = "move end of line" })
+map({"n", "v", "i"}, "<C-a>", "<ESC>^i", { desc = "move beginning of line" })
+map({"n", "v", "i"}, "<C-e>", "<End>", { desc = "move end of line" })
 map("i", "<C-h>", "<Left>", { desc = "move left" })
 map("i", "<C-l>", "<Right>", { desc = "move right" })
 map("i", "<C-j>", "<Down>", { desc = "move down" })
 map("i", "<C-k>", "<Up>", { desc = "move up" })
+
+-- Move lines up/down
+map("n", "<A-j>", ":m .+1<CR>==", { desc = "Move line down" })
+map("n", "<A-k>", ":m .-2<CR>==", { desc = "Move line up" })
+map("v", "<A-j>", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
+map("v", "<A-k>", ":m '<-2<CR>gv=gv", { desc = "Move selection up" })
 
 -- LSP
 
