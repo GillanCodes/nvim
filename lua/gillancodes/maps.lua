@@ -79,6 +79,7 @@ vim.keymap.set('n', '<leader>se', vim.diagnostic.open_float, {noremap=true, sile
 
 -- Nonels
 map("n", "<leader>fm", vim.lsp.buf.format, {})
+map("v", "<leader>fm", vim.lsp.buf.format, {})
 
 -- FTerm
 vim.keymap.set('n', '<C-return>', '<CMD>lua require("FTerm").toggle()<CR>')
@@ -91,3 +92,6 @@ vim.keymap.set("n", "J", "mzJ`z", { desc = "Join lines and keep cursor position"
 -- Better indenting in visual mode
 vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
 vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
+
+-- Search
+vim.keymap.set("n", "sc", ":nohlsearch<CR>", { desc = "Clear Search" })
