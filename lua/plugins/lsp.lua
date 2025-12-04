@@ -1,4 +1,3 @@
-
 -- Automatically start the Godot LSP when opening .gd files
 vim.api.nvim_create_autocmd("FileType", {
         pattern = { "gd", "gdscript" },
@@ -119,6 +118,13 @@ return {
                                 cmd = { "phpactor", "language-server" },
                                 root_markers = { "composer.json", ".git" },
                                 capabilities = capabilities,
+                        })
+
+                        vim.lsp.config("rust-analyzer", {
+                                diagnostics = {
+                                        disabled = { "unlinked-file" }
+                                }
+
                         })
 
                         -- Enable LSP servers
