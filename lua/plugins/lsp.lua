@@ -32,7 +32,7 @@ return {
                 "williamboman/mason-lspconfig.nvim",
                 config = function()
                         require("mason-lspconfig").setup({
-                                ensure_installed = { "gdscript", 'godot_resource', "gdshader", "emmet_ls", "rust_analyzer", "lua_ls", "ts_ls", "emmet_ls", "phpactor" },
+                                ensure_installed = { "emmet_ls", "rust_analyzer", "lua_ls", "ts_ls", "emmet_ls", "phpactor" },
                                 auto_install = true,
                         })
 
